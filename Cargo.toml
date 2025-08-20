@@ -1,5 +1,5 @@
 [package]
-name = "ulid-cli"
+name = "ulid"
 version = "0.1.0"
 edition = "2024"
 
