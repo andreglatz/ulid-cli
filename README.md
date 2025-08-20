@@ -27,7 +27,7 @@ cd ulid-cli
 cargo build --release
 ```
 
-The compiled binary will be available at `target/release/ulid-cli`.
+The compiled binary will be available at `target/release/ulid`.
 
 ### Using Cargo
 
@@ -42,7 +42,7 @@ cargo install --path .
 Generate a new ULID:
 
 ```bash
-ulid-cli
+ulid
 ```
 
 Output:
@@ -56,13 +56,13 @@ Output:
 Generate a ULID and automatically copy it to your clipboard:
 
 ```bash
-ulid-cli --clipboard
+ulid --clipboard
 ```
 
 or
 
 ```bash
-ulid-cli -c
+ulid -c
 ```
 
 Output:
@@ -77,7 +77,7 @@ Copied to clipboard!
 View all available options:
 
 ```bash
-ulid-cli --help
+ulid --help
 ```
 
 ## Features
@@ -104,14 +104,14 @@ You can use this tool in shell scripts:
 
 ```bash
 #!/bin/bash
-ID=$(ulid-cli)
+ID=$(ulid)
 echo "Generated ID: $ID"
 ```
 
 ### Generate Multiple ULIDs
 
 ```bash
-for i in {1..5}; do ulid-cli; done
+for i in {1..5}; do ulid; done
 ```
 
 ## ULID Format
